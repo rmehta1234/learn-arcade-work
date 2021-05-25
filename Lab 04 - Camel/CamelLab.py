@@ -11,11 +11,13 @@ def main():
 
     print()
 
+    # intro
     print("Welcome to Camel!")
     print("You have stolen a camel to make your way across the great Mobi desert.")
     print("The natives want their camel back and are chasing you down!")
     print("Survive your desert trek and outrun the natives.")
 
+    # questions
     while not done:
         print()
         print("A. Drink from your canteen.")
@@ -25,6 +27,7 @@ def main():
         print("E. Status check.")
         print("Q. Quit.")
 
+        # answering each question
         native_distance_increment = random.randrange(7, 14)
         choice = input("Your choice? ").lower()
         if choice == "q":
