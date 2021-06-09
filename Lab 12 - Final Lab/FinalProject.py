@@ -223,7 +223,7 @@ def roulette(money):
             print()
             print("You have paid off your debt!")
             print("You Win!")
-        if money < 50:
+        if money <= 0:
             print()
             print("You have run out of money.")
             print("You have two choices:")
@@ -235,6 +235,7 @@ def roulette(money):
                 print()
             if choice == "a":
                 russian_roulette(money)
+                done = True
 
     return money
 
@@ -263,6 +264,8 @@ def slots(money):
             if money < 200:
                 print()
                 print("You have an insufficient balance.")
+                print("You need at least $200 to play slots.")
+                print("Current balance: $", money)
                 done = True
             else:
                 print()
@@ -303,6 +306,8 @@ def slots(money):
                     if money < 500:
                         print()
                         print("You have an insufficient balance.")
+                        print("You need at least $500.")
+                        print("Current balance: $", money)
                         done = True
                     else:
                         money -= 500
@@ -335,7 +340,7 @@ def slots(money):
             print()
             print("You have paid off your debt!")
             print("You Win!")
-        if money < 50:
+        if money <= 0:
             print()
             print("You have run out of money.")
             print("You have two choices:")
@@ -347,6 +352,7 @@ def slots(money):
                 print()
             if choice == "a":
                 russian_roulette(money)
+                done = True
     return money
 
 
