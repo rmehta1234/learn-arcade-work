@@ -46,7 +46,7 @@ def main():
 
 
 def russian_roulette(money):
-    # work in progress
+    # Russian roulette description
 
     print()
     print("Welcome to Russian roulette.")
@@ -62,6 +62,7 @@ def russian_roulette(money):
     print("A. Spin barrel and shoot")
     print("B. Menu")
     choice = input("Your choice? ").lower()
+    # Russian roulette code
 
     died = False
 
@@ -101,11 +102,13 @@ def russian_roulette(money):
 
 
 def roulette(money):
+    # roulette description
     print()
     print("Welcome to roulette!")
     print("Place a bet on a specific number or category.")
     print("After the ball is thrown, you will make a certain amount of money depending on what number it lands on.")
 
+    # roulette code
     done = False
     while not done:
         print()
@@ -237,9 +240,11 @@ def roulette(money):
 
 
 def slots(money):
+    # slots disc.
     print()
     print("Welcome to slots!")
     print("Spin to win! Spend more money to earn better prizes!")
+    # slots code
 
     done = False
     while not done:
@@ -346,6 +351,7 @@ def slots(money):
 
 
 def welcome_sign():
+    # Graphic welcome sign
 
     arcade.open_window(900, 900, "Casino Welcome Sign")
 
